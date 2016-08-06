@@ -1,0 +1,117 @@
+<!--
+-- Mirko Gueregat - 17/11/2015
+-->
+
+<div class="container">
+    <div id="search" class="col-sm-6 col-sm-offset-3">
+        <div class="alert alert-danger" role="alert"></div>
+        <form>
+            <div class="form-group">
+                <label for="rut" class="control-label">RUT</label>
+                <input type="text" id="rut" class="form-control" name="rut" placeholder="Ingrese su rut">
+            </div>
+            <div class="form-group">
+                <label for="year" class="control-label">Año de ingreso</label>
+                <input type="password" class="form-control" name="year" placeholder="Ingrese su año de ingreso a la institución">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-info pull-right">Consultar</button>
+            </div>
+        </form>    
+    </div>
+    <div id="result">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Información</h3>
+            </div>
+            <div class="panel-body">
+                <table>
+                    <tr>
+                        <td>Nombre</td>
+                        <td>:</td>
+                        <td id="nombre"></td>                        
+                    </tr>
+                    <tr>
+                        <td>RUT</td>
+                        <td>:</td>
+                        <td id="rut2"></td>                        
+                    </tr>
+                    <tr>
+                        <td>Profesión</td>
+                        <td>:</td>
+                        <td id="profesion"></td>                        
+                    </tr>
+                    <tr>
+                        <td>Servicio</td>
+                        <td>:</td>
+                        <td id="servicio"></td>                        
+                    </tr>
+                    <tr>
+                        <td>Cargo</td>
+                        <td>:</td>
+                        <td id="cargo"></td>                        
+                    </tr>  
+                    <tr>
+                        <td>Fecha de ingreso</td>
+                        <td>:</td>
+                        <td id="ingreso"></td>                        
+                    </tr> 
+                    <tr>
+                        <td>Grado asimilado</td>
+                        <td>:</td>
+                        <td id="grado"></td>                        
+                    </tr> 
+                    <tr>
+                        <td>Sistema de turno</td>
+                        <td>:</td>
+                        <td id="turno"></td>                        
+                    </tr> 
+                </table>
+            </div>
+        </div>
+        
+        <div class="panel panel-default">
+            <div class="panel-heading">Detalle de sueldo</div>
+            <div class="panel-body">
+                <p>En la presenta tabla se detalla y diferencia el sueldo anterior con el nuevo sueldo entregado por el servicio de salud. Los montos se encuentran expresados en bruto</p>
+            </div>
+            <table class="table table-bordered">
+                <tr class="active">
+                    <th>Detalle</th>
+                    <th class="text-center">Anterior</th>
+                    <th class="text-center">Nuevo</th>
+                    <th class="text-center">Diferencia</th>
+                </tr>
+                <tr>
+                    <td>Sueldo base</td>
+                    <td class="number" id="base-anterior"></td>
+                    <td class="number" id="base-nueva"></td>
+                    <td class="number" id="base-diferencia"></td>
+                </tr>
+                <tr>
+                    <td>Bono noche</td>
+                    <td class="text-right">--</td>
+                    <td class="number" id="bono-noche"></td>
+                    <td class="text-right">--</td>
+                </tr>
+                <tr>
+                    <td>Asignación especial</td>
+                    <td class="text-right">--</td>
+                    <td class="text-right"><span id="detalle-asig"></span>&nbsp;<span class="number" id="especial"></span></td>
+                    <td class="text-right">--</td>
+                </tr>
+                <tr id="totales" class="info">
+                    <td>Total base mas bonos</td>
+                    <td class="number" id="total-base-antigua"></td>
+                    <td class="number" id="total-base-nueva"></td>
+                    <td class="number" id="diferencia-totales"></td>
+                </tr>
+            </table>
+        </div>
+        <button type="button" class="btn btn-default pull-right">Volver</button>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+    <script type="text/javascript" src="js/app.home.js"></script>
+</div>
+<div class="clear"></div>

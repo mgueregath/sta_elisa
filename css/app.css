@@ -1,0 +1,51 @@
+/*
+* Mirko Gueregat - 17/11/2015
+*/
+
+.navbar .container-fluid button{
+	margin: 8px;
+}
+#wrapper{
+    padding: 0;
+    padding-top: 80px;
+    margin-bottom: 40px;
+}
+
+.glyphicon-edit{
+    color: darkorange;
+    margin-right: 3px;
+    cursor: pointer;
+}
+.glyphicon-remove-circle{
+    color: crimson;
+    margin-left: 3px;
+    cursor: pointer;
+}
+html, body, .container-fluid{
+    margin: 0;
+    width: 100%;
+}
+.navbar{
+    margin: 0px;
+}
+.alert, #result{
+    display: none;
+}
+td{
+    padding: 3px;
+}
+#totales{
+    font-size: 15px;
+    font-weight: 700;
+}
+.number{
+    text-align: right;
+}
+.clear{
+    clear: both;
+}
+.thanks {
+    position: relative;
+    bottom: 3px;
+    text-align: right;
+}
